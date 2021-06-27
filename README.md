@@ -2,7 +2,7 @@
 <p>
 </p>
 
-> A Peer to Peer blockchain network used for currency transactions implemented using Spring Boot API
+> A Peer to Peer blockchain network used for currency transaction implemented using Spring Boot API
 
 
 
@@ -14,7 +14,7 @@ Run the following command simuntaneously on different port(8050,8051,8052) to ru
 ```sh
  mvn spring-boot:run -Drun.arguments=--server.port=PORT_NAME
 ```
-Once the different chains are up, use the below command for each to check if all blockchains are working properly:
+Once the chains are up, use the below command for each to check if all blockchains are working properly:
 
 ```sh
 http://127.0.0.1:PORT_NAME/blockchain/get_chain
@@ -29,8 +29,6 @@ So to connect chain running on port 8050 we will pass the following request:
 }
 ```
 Now pass the above request and hit the below url:
-
-use the following command:
 
 ```sh
 http://127.0.0.1:8050/blockchain/connect_node
@@ -54,7 +52,7 @@ Now pass the above request and hit the below url:
 http://127.0.0.1:PORT_NAME/blockchain/add_transaction
 ``` 
 Now, the transaction is done but not complete unles mining is done, so will need to mine in order to add it to blockchain.
-So for mining lhit the below url:
+So for mining hit the below url:
 
 ```sh
 http://127.0.0.1:PORT_NAME/blockchain/mine_block
